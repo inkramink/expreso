@@ -5,14 +5,15 @@ from PyQt5.QtWidgets import QWidget, QApplication, QPushButton, QMainWindow
 from PyQt5.QtCore import Qt, QPointF
 from PyQt5.QtGui import QPainter, QColor, QPolygonF
 from math import radians, cos, sin, sqrt
+from xxx import Ui_MainWindow
 
 SCREEN_SIZE = [500, 500]
 
 
-class Example(QMainWindow):
+class Example(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('xxx.ui', self)
+        self.setupUi(self)
         self.btn.clicked.connect(self.paint)
         self.initUI()
 
@@ -27,7 +28,7 @@ class Example(QMainWindow):
         qp = QPainter()
         qp.begin(self)
         self.x, self.y = randint(0, 500), randint(0, 500)
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
         r = randint(5, 200)
         qp.drawEllipse(self.x - r, self.y - r, self.x + r, self.y + r)
         qp.end()
