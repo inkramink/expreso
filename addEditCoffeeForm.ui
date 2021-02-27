@@ -14,40 +14,40 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTableWidget" name="tw">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>801</width>
-      <height>461</height>
+      <width>800</width>
+      <height>50</height>
      </rect>
     </property>
+    <property name="text">
+     <string>Введите изменения в данную ячейку:</string>
+    </property>
    </widget>
-   <widget class="QPushButton" name="ccbtn">
+   <widget class="QPushButton" name="save">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>460</y>
-      <width>400</width>
-      <height>75</height>
+      <y>450</y>
+      <width>800</width>
+      <height>100</height>
      </rect>
     </property>
     <property name="text">
-     <string>изменить выбранную ячейку</string>
+     <string>Сохранить</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="nlbtn">
+   <widget class="QPlainTextEdit" name="new_data">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>460</y>
-      <width>400</width>
-      <height>75</height>
+      <x>0</x>
+      <y>50</y>
+      <width>800</width>
+      <height>400</height>
      </rect>
-    </property>
-    <property name="text">
-     <string>новая строка</string>
     </property>
    </widget>
   </widget>
