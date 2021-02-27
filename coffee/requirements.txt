@@ -1,0 +1,7 @@
+PyQt5==5.15.1
+PyQt5-sip==12.8.1
+pyqt5-tools==5.15.1.1.7.2
+stdin==2020.20.3
+SQLAlchem==1.3.10
+SQLAlchemy-serializer==1.3.4.4
+SQLite3Database==0.2.0
